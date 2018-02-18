@@ -11,6 +11,7 @@
      */
    function solution(map) {
         // todo: подсчитать кол-во островов на карте
+        // создаем копию матрицы
         var map = cloneMatrix(map),
             rows = map.length, 
             cols = map[0].length;
@@ -51,7 +52,7 @@
             return false;
         }
 
-        //вспомогательные функции
+        // копирование матрицы
         function cloneMatrix(matrix) {
             var clone = [];
 
